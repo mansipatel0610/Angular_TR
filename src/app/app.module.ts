@@ -18,6 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { DishDetailComponent } from './dish-detail/dish-detail.component';
 import { DishService } from './services/dish.service';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { PromotionService } from './services/promotion.service';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     
   ],
   providers: [
-    DishService
+    DishService,
+    PromotionService
   ],
   bootstrap: [AppComponent]
 })
