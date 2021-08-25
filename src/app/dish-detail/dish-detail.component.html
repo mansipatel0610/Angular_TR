@@ -12,7 +12,7 @@
       <h4>Loading... Please Wait</h4>
     </div>
 
-  <div fxFlex="40">
+  <div fxFlex="40" [@visibility]="visibility">
     <div fxFlex *ngIf="dish">
       <mat-card>
         <mat-card-header>
@@ -41,7 +41,7 @@
     </div>
   </div>
 
-<div fxFlex="40">
+<div fxFlex="40" [@visibility]="visibility">
   <div fxFlex *ngIf="dish.comments">
     <mat-card>
       <mat-card-header>
