@@ -6,6 +6,7 @@ import { Leader } from '../shared/leader';
 import { LEADERS } from '../shared/leaders';
 // import { of } from 'rxjs';
 import { delay } from 'rxjs/operators';
+
 @Injectable({
   providedIn: 'root'
 })
