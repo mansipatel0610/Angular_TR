@@ -20,7 +20,7 @@ export class DishDetailComponent implements OnInit {
   dishIds: string[];
   prev: string;
   next: string;
-
+  errMess: string;
   commentForm: FormGroup;
   comment: Comment;
   formErrors = {
@@ -53,7 +53,8 @@ export class DishDetailComponent implements OnInit {
     .subscribe(dish => { 
       this.dish = dish; 
       this.setPrevNext(dish.id); 
-    });
+    },
+    errmess => this.errMess = <any>errmess);
   }
   setPrevNext(dishId: string) {
     const index = this.dishIds.indexOf(dishId);
